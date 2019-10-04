@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<link rel="stylesheet" href="css/bootstrap3.css">
+	<script src="js/bootstap3.js"></script>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		.main-container {
+			border: 1px solid black;
+		}
+
+		.banner {
+			position: sticky;
+			top: 0;
+			z-index: -1;
+			padding: 10px 0;
+			margin-left: 300px;
+			background-image: url("images/27.jpg");
+			background-size: cover;
+			height: 800px;
+			overflow: hidden;
+		}
+
+		.bannertext {
+			margin: 180px 180px;
+			width: 700px;
+		}
+
+		.bannertext h1 {
+			font-size: 75px;
+			text-transform: capitalize;
+			color: white;
+			line-height: 95px;
+			font-weight: normal;
+		}
+
+		.bannertext p {
+			font-size: 28px;
+			color: white;
+			line-height: 33px;
+			margin-top: 65px;
+		}
+
+		.bannertext button {
+			background-color: #4fc3a3;
+			padding: 15px 30px;
+			margin-top: 20px;
+			border: none;
+			color: white;
+			text-transform: uppercase;
+			border-radius: 3px;
+		}
+
+		.bannertext button:hover {
+			background-color: white;
+			color: blue;
+		}
+
+		.navside {
+
+			width: 300px;
+			height: 100%;
+
+			text-align: center;
+			background-color: #43515E;
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		.navimage img {
+			width: 80%;
+		}
+
+		.navmenu a {
+			display: block;
+			padding: 20px 0px;
+			font-size: 17px;
+			text-decoration: none;
+			color: white;
+		}
+
+		.navmenu {
+			margin: 30px 0;
+		}
+
+		.navtime p {
+			color: rgba(255, 255, 255, 1);
+		}
+
+		.navimage {
+			margin-top: 25px;
+		}
+
+		.dentistcare {
+			padding: 130px 0;
+			text-align: center;
+			margin-left: 300px;
+			border: 1px solid black;
+			background-color: white;
+
+		}
+
+		.dentistcare h1 {
+			font-size: 64px;
+			margin: 30px 0;
+			font-weight: normal;
+		}
+
+		.navicon a {
+			font-size: 35px;
+			padding: 35px 8px;
+			color: white;
+			opacity: 0.5;
+			text-decoration: none;
+		}
+
+		.dentistcarechild {
+
+			width: 680px;
+			margin: auto;
+		}
+
+		.dentistcare p {
+			font-size: 22px;
+			color: #56585A;
+			line-height: 32px;
+			letter-spacing: 1px;
+
+		}
+
+		.dentistcare button {
+			background-color: #6487C2;
+			color: white;
+			text-transform: uppercase;
+			padding: 13px 29px;
+			border: none;
+			margin: 40px 0;
+		}
+
+		.underl {
+			margin: 50px 0;
+			height: 2px;
+			width: 150px;
+			background-color: blue;
+		}
+
+		.underd {
+			height: 1px;
+			width: 120px;
+			margin: 25px auto;
+			background-color: blue;
+		}
+
+		.underadd {
+			margin: 30px auto;
+			width: 120px;
+			height: 2px;
+			background-color: blue;
+		}
+
+		.uline {
+			height: 2px;
+			width: 25px;
+			margin: 25px 0;
+			background-color: white;
+		}
+
+		/* benfits */
+		.benfits {
+			padding: 100px 0 50px 0;
+			text-align: center;
+			margin-left: 300px;
+			border: 1px solid black;
+			background-color: #F7F7F7;
+
+		}
+
+		.benfitschild {
+			width: 680px;
+			margin: auto;
+		}
+
+		.benfits h1 {
+			font-size: 64px;
+			margin: 30px 0;
+			font-weight: normal;
+		}
+
+		.benfits p {
+			font-size: 22px;
+			color: #56585A;
+			line-height: 32px;
+			letter-spacing: 1px;
+		}
+
+		/* Images */
+		.adds{
+			border: 1px solid black;
+		}
+		.parent {
+			border: 2px solid blue;
+			margin: 30px;
+			float: left;
+			width: 45%;
+			height: 350px;
+			overflow: hidden;
+			transition: transform .5s ease;
+
+		}
+
+		.parent p {
+			color: white;
+			font-size: 28px;
+			margin-top: 130px;
+
+		}
+
+		.image {
+			padding: 30px;
+			text-align: left;
+			width: 110%;
+			height: 110%;
+			border: 1px solid red;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.one {
+			background-image: url("images/great_smiles.jpg");
+		}
+
+		.two {
+			background-image: url("images/improved_confidence.jpg");
+		}
+		.three{
+			background-image: url("images/Healthy_Teeth.jpg");
+		}
+		.four{
+			background-image: url("images/Peace_of_mind.jpg");
+		}
+
+
+		.parent:hover .image{
+			/* transform: scale(1.1); */
+			width: 100%;
+			height: 100%;
+			transition-duration: 1s;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="main-container">
+		<div class="navside">
+			<div class="navimage">
+				<img src="images/dentistlogo.png">
+			</div>
+			<div class="navmenu">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Treatment</a>
+				<a href="#">Latest news</a>
+				<a href="#">Book an oppointment</a>
+			</div>
+			<div class="navtime">
+				<p>Opening Hours</p>
+				<p style="opacity:0.4; margin:20px 0;">Monday-Saturday</p>
+				<p style="opacity:0.7;">8:30AM-06PM</p>
+			</div>
+			<div class="navicon">
+				<a href="#" class="fa fa-facebook-f"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-youtube"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-android"></a>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="bannertext">
+
+				<h1>Avada gives You A reason To Smile </h1>
+				<div class="underl">
+				</div>
+				<p>Avada Dentists truly believe that patients deserve the highest standard of dental care</p>
+				<button>
+					Learn more about us
+				</button>
+			</div>
+		</div>
+
+		<div class="dentistcare">
+			<div class="dentistcarechild">
+				<div class="denicon">
+					<img src="images/icon_1.png">
+				</div>
+				<h1><span style="color:#6487C2;">Avada Dentists</span> Care Passionate about Helping take care of Your
+					Teeth</h1>
+				<div class="underd">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat..</p>
+				<button>Book An Oppitnement</button>
+			</div>
+		</div>
+		<div class="benfits">
+			<div class="benfitschild">
+				<div class="benicon">
+					<img src="images/icon_2.png">
+				</div>
+				<h1>The Benfits</h1>
+				<div class="underadd">
+				</div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+					et
+					dolore magna aliqua. </p>
+			</div>
+			<div class="adds">
+				<div class="parent">
+					<div class="image one">
+						<img src="images/icons8-love-50.png" alt="logo1">
+						<p>Comfort Come Fast</p>
+						<div class="uline"></div>
+					</div>
+				</div>
+				<div class="parent">
+					<div class="image two">
+						<img src="images/icons8-love-50.png" alt="logo1">
+						<p>Affordable Dental Treatments</p>
+						<div class="uline"></div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="adds">
+				<div class="parent">
+					<div class="image three">
+						<img src="images/icons8-love-50.png" alt="logo1">
+						<p>Dental Community Articles</p>
+						<div class="uline"></div>
+					</div>
+				</div>
+				<div class="parent">
+					<div class="image four">
+						<img src="images/icons8-love-50.png" alt="logo1">
+						<p>Emergency Dental Care</p>
+						<div class="uline"></div>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+
+</html>
