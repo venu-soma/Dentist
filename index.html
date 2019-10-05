@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/fontawesome.css">
 	<link rel="stylesheet" href="css/bootstrap3.css">
 	<script src="js/bootstap3.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<style>
 		* {
 			box-sizing: border-box;
@@ -15,7 +16,7 @@
 		}
 
 		.main-container {
-			border: 1px solid black;
+			/* border: 1px solid black; */
 		}
 
 		.banner {
@@ -105,7 +106,7 @@
 			padding: 130px 0;
 			text-align: center;
 			margin-left: 300px;
-			border: 1px solid black;
+			/* border: 1px solid black; */
 			background-color: white;
 
 		}
@@ -117,11 +118,56 @@
 		}
 
 		.navicon a {
-			font-size: 35px;
+			position: relative;
+			font-size: 24px;
 			padding: 35px 8px;
 			color: white;
 			opacity: 0.5;
 			text-decoration: none;
+		}
+
+		.fbtext,
+		.twitext,
+		.yttext,
+		.igtext,
+		.antext {
+			position: absolute;
+			top: 7px;
+			left: -15px;
+			font-size: 12px;
+			/* border: 1px solid red; */
+			background-color: black;
+			color: white;
+			padding: 5px 8px;
+			z-index: 1;
+			border-radius: 3px;
+			visibility: hidden;
+
+		}
+
+		.fbtext::after,
+		.twitext::after,
+		.yttext::after,
+		.igtext::after,
+		.antext::after {
+			content: "";
+			position: absolute;
+			top: 22px;
+			left: 25px;
+			width: 0px;
+			height: 0px;
+			display: block;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-top: 6px solid black;
+		}
+
+		.fb:hover .fbtext,
+		.twi:hover .twitext,
+		.yt:hover .yttext,
+		.ig:hover .igtext,
+		.an:hover .antext {
+			visibility: visible;
 		}
 
 		.dentistcarechild {
@@ -180,7 +226,7 @@
 			padding: 100px 0 50px 0;
 			text-align: center;
 			margin-left: 300px;
-			border: 1px solid black;
+			/* border: 1px solid black; */
 			background-color: #F7F7F7;
 
 		}
@@ -204,18 +250,17 @@
 		}
 
 		/* Images */
-		.adds{
-			border: 1px solid black;
+		.adds {
+			/* border: 1px solid black; */
 		}
+
 		.parent {
-			border: 2px solid blue;
+			/* border: 2px solid blue; */
 			margin: 30px;
 			float: left;
 			width: 45%;
 			height: 350px;
 			overflow: hidden;
-			transition: transform .5s ease;
-
 		}
 
 		.parent p {
@@ -230,9 +275,10 @@
 			text-align: left;
 			width: 110%;
 			height: 110%;
-			border: 1px solid red;
+			/* border: 1px solid red; */
 			background-position: center;
 			background-size: cover;
+			transition-duration: 1s;
 		}
 
 		.one {
@@ -242,20 +288,169 @@
 		.two {
 			background-image: url("images/improved_confidence.jpg");
 		}
-		.three{
+
+		.three {
 			background-image: url("images/Healthy_Teeth.jpg");
 		}
-		.four{
+
+		.four {
 			background-image: url("images/Peace_of_mind.jpg");
 		}
 
 
-		.parent:hover .image{
+		.parent:hover .image {
 			/* transform: scale(1.1); */
 			width: 100%;
 			height: 100%;
-			transition-duration: 1s;
+
 		}
+
+		/* Smile milebg smiletext */
+		.smile {
+			margin-left: 300px;
+			/* border: 3px solid red; */
+
+			height: 800px;
+			background-color: white;
+		}
+
+		.smilebg {
+			width: 100%;
+			height: 550px;
+			background-image: url("images/testimonial_dental_bg.jpg");
+			background-position: top;
+			background-size: cover;
+		}
+
+		/* Smile milebg smiletext */
+		.smile {
+			margin-left: 300px;
+			/* border: 3px solid red; */
+			height: 550px;
+			/* background-color: white; */
+		}
+
+		.smilebg {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background-image: url("images/testimonial_dental_bg.jpg");
+			background-position: top;
+			background-size: cover;
+		}
+
+		.smilebg:before {
+			content: '\201c';
+			font-size: 82px;
+			color: white;
+			position: absolute;
+			top: 120px;
+			left: 200px;
+		}
+
+		.smilecontent p:first-child {
+			/* border: 1px solid pink; */
+			font-size: 38px;
+			line-height: 50px;
+			margin-bottom: 30px;
+			/* margin: 77px auto; */
+		}
+		.smilecontent p:not(:first-child) {
+			font-size: 18px;
+			line-height: 24px;
+			padding: 5px 0;
+		}
+		.smilecontent {
+			color: white;
+			font-weight: lighter;
+			text-align: left;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 57%;
+			height: auto;
+		}
+
+		/* footer toggle */
+		.myDiv {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+
+        }
+
+        .btn {
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: #43515E;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            float: right;
+
+        }
+
+        .content {
+            /* margin-top: 20px; */
+            width: 100%;
+            /* height: 300px; */
+            padding: 35px 30px;
+            background-color: #43515E;
+            opacity: 0.9;
+			display: none;
+		 
+        }
+
+        .address {
+            margin: auto;
+            width: 70%;
+            /* border: 2px solid black; */
+        }
+
+        .about,
+        .recent,
+        .contact {
+            
+            float: left;
+            width: 27%;
+            margin: 0 30px;
+            /* border: 1px solid red; */
+        }
+        .about h4,
+        .recent h4,
+        .contact h4{
+            margin-bottom: 20px;
+            color: white;
+            font-weight: normal;
+
+        }
+        .about p{
+            color: white;
+            font-size: 18px;
+            
+            line-height: 30px;
+
+        }
+        .recent p{
+            /* padding: 0 20px; */
+            color: #4fc3a3;
+            line-height: 30px;
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+
+       
+        .contact p{
+            font-size: 16px;
+            color: white;
+            padding: 5px 0;
+
+        }
+
 	</style>
 </head>
 
@@ -278,11 +473,23 @@
 				<p style="opacity:0.7;">8:30AM-06PM</p>
 			</div>
 			<div class="navicon">
-				<a href="#" class="fa fa-facebook-f"></a>
-				<a href="#" class="fa fa-twitter"></a>
-				<a href="#" class="fa fa-youtube"></a>
-				<a href="#" class="fa fa-instagram"></a>
-				<a href="#" class="fa fa-android"></a>
+
+				<a href="#" class="fa fa-facebook-f fb">
+					<span class="fbtext">Facebook</span>
+				</a>
+
+				<a href="#" class="fa fa-twitter twi">
+					<span class="twitext">Twitter</span>
+				</a>
+				<a href="#" class="fa fa-youtube yt">
+					<span class="yttext">Youtube</span>
+				</a>
+				<a href="#" class="fa fa-instagram ig">
+					<span class="igtext">Instragram</span>
+				</a>
+				<a href="#" class="fa fa-android an">
+					<span class="antext">Android</span>
+				</a>
 			</div>
 		</div>
 		<div class="banner">
@@ -297,7 +504,6 @@
 				</button>
 			</div>
 		</div>
-
 		<div class="dentistcare">
 			<div class="dentistcarechild">
 				<div class="denicon">
@@ -360,8 +566,109 @@
 				<div style="clear: both;"></div>
 			</div>
 		</div>
-		
+		<div class="smile">
+			<div class="smilebg">
+				<div class="smilecontent">
+					<p> I can smile with complete confidence!
+						I can’t now imagine ever being concerned about
+						appearing in photos. It’s just been a new
+						lease of life. Thank you.
+					</p>
+					<p>Laura Hughes</p>
+					<p>Patien</p>
+				</div>
+
+			</div>
+		</div>
+
+
+		<!-- toggle footer -->
+
+	<div class="myDiv">
+        <div class="btn" id="jsbtn">
+            +
+        </div>
+        <div style="clear: both;"></div>
+        <div class="content" id="jscontent">
+            <div class="address">
+                <div class="about">
+                    <h4>ABOUT OUR PRACTICE</h4>
+                    <p>
+                        Phasellus non ante ac dui sagittis volutpat.
+                        Curabitur a quam nisl. Nam est elit, congue et
+                        quam id,laoreet consequat erat. Aenean porta
+                        placerat efficitur.Vestibulum et dictum massa,
+                        ac finibus turpis.
+                    </p>
+                </div>
+                <div class="recent">
+                    <h4>RECENT POSTS</h4>
+                    <p>&#8594;Hello world!</p>
+                    <p>&#8594;There’s always a good reason to visit the dentist</p>
+                    <p>&#8594;Brushing for just 2 minutes can reduce plaque by 80%</p>
+                </div>
+                <div class="contact">
+                    <h4>CONTACT INFO</h4>
+                    <p>12345 West Elm Street
+
+                        <p>Phone: 1.888.456.7890</p>
+
+                        <p>Fax: 1.888.654.9876</p>
+
+                        <p> Email: Email For An Appointment</p>
+
+                        <p>Web: Buy Avada Today!</p>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+
+        </div>
+    </div>
+
 	</div>
+
+	<script>
+		$(window).scroll(function () {
+			let scroll_position = $(window).scrollTop();
+			$('.smilebg').css({ 'background-position-x': scroll_position + 'px' });
+		});
+
+
+		// toggle footer
+		  /*
+        let mybtn = document.getElementById("jsbtn");
+        let showhide = document.getElementById("jscontent");
+        mybtn.addEventListener("click", function () {
+            if (showhide.style.display === "none") {
+                showhide.style.display = "block";
+                mybtn.innerHTML = "Hide";
+                
+
+            } else {
+                showhide.style.display = "none";
+                mybtn.innerHTML = "Show";
+            }
+        });
+        */
+
+        $(document).ready(function () {
+            $('.btn').click(function () {
+                $('.content').slideToggle("slow");
+                // $('.content').animate({opacity:'0.5'},"slow");
+                // $(".btn").text("Show");
+            });
+        });
+        let mybtn = document.getElementById("jsbtn");
+        let showhide = document.getElementById("jscontent");
+        mybtn.addEventListener("click", function () {
+            if (mybtn.innerHTML == "-") {
+                mybtn.innerHTML = "+";
+            } else {
+                mybtn.innerHTML = "-";
+            }
+        });
+
+	</script>
 </body>
 
 </html>
