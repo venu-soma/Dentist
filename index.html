@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fontawesome.css">
 	<link rel="stylesheet" href="css/bootstrap3.css">
+	<link rel="stylesheet" href="css/mobile.css">
 	<script src="js/bootstap3.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<style>
@@ -632,8 +633,9 @@
 			display: flex;
 			/* border: 2px solid red; */
 		}
-		.smile1{
-			margin-left:300px;
+
+		.smile1 {
+			margin-left: 300px;
 		}
 
 		.smile {
@@ -651,6 +653,7 @@
 			position: relative;
 			top: 0;
 		}
+
 		.bgsmile img {
 			width: 100%;
 		}
@@ -831,6 +834,7 @@
 				</button>
 			</div>
 		</div>
+
 		<div class="dentistcare">
 			<div class="dentistcarechild">
 				<div class="denicon">
@@ -845,6 +849,7 @@
 				<button>Book An Oppitnement</button>
 			</div>
 		</div>
+
 		<div class="benfits">
 			<div class="benfitschild">
 				<div class="benicon">
@@ -891,6 +896,7 @@
 				<div style="clear: both;"></div>
 			</div>
 		</div>
+
 		<div class="smile">
 			<div class="smilebg">
 				<div class="smilecontent">
@@ -906,9 +912,10 @@
 			</div>
 		</div>
 
-		<!--
+		<!--	
 	Practice by venu praveeen
--->
+	-->
+	
 		<div class="treatment">
 			<div class="our">
 				<img src="images/icon_3.png">
@@ -941,6 +948,7 @@
 			</div>
 			<div style="clear:both;"></div>
 		</div>
+	
 		<!--
 		<div class="confidence">
 			<div class="confidenceimg">
@@ -954,6 +962,10 @@
 			</div>
 		</div>
 		-->
+
+
+
+
 		<div class="partners">
 			<div class="partnerpara">
 				<img src="images/icon_4.png">
@@ -979,13 +991,14 @@
 				<div style="clear:both;"></div>
 			</div>
 		</div>
-
+		
 		<div class="smile1">
 			<div class="bgsmile">
 				<h1>Ready To Smile?</h1>
 				<button>+ BOOK AN OPPOINTMENT</button>
 			</div>
 		</div>
+	
 		<div class="contact1">
 			<div class="den ">
 				<div class="center"><img src="images/dentistlogo.png">
@@ -1019,101 +1032,99 @@
 			</div>
 			<div style="clear:both;"></div>
 		</div>
+		
 
 
 		<div class="foot">
 			&copy; Copyright 2018-2019 | by <span>Dentist</span> | All Rights Reserved | Powered by<span>
 				HostingInIndia</span>
-			<div>
-				<!-- toggle footer -->
+		<div>
+			
+		<div class="myDiv">
 
-				<div class="myDiv">
-
-					<div class="btn" id="jsbtn">
-						+
+			<div class="btn" id="jsbtn">
+				+
+			</div>
+			<div style="clear: both;"></div>
+			<div class="content" id="jscontent">
+				<div class="address">
+					<div class="about">
+						<h4>ABOUT OUR PRACTICE</h4>
+						<p>
+							Phasellus non ante ac dui sagittis volutpat.
+							Curabitur a quam nisl. Nam est elit, congue et
+							quam id,laoreet consequat erat. Aenean porta
+							placerat efficitur.Vestibulum et dictum massa,
+							ac finibus turpis.
+						</p>
 					</div>
-					<div style="clear: both;"></div>
-					<div class="content" id="jscontent">
-						<div class="address">
-							<div class="about">
-								<h4>ABOUT OUR PRACTICE</h4>
-								<p>
-									Phasellus non ante ac dui sagittis volutpat.
-									Curabitur a quam nisl. Nam est elit, congue et
-									quam id,laoreet consequat erat. Aenean porta
-									placerat efficitur.Vestibulum et dictum massa,
-									ac finibus turpis.
-								</p>
-							</div>
-							<div class="recent">
-								<h4>RECENT POSTS</h4>
-								<p>&#8594;Hello world!</p>
-								<p>&#8594;There’s always a good reason to visit the dentist</p>
-								<p>&#8594;Brushing for just 2 minutes can reduce plaque by 80%</p>
-							</div>
-							<div class="contact">
-								<h4>CONTACT INFO</h4>
-								<p>12345 West Elm Street
-
-									<p>Phone: 1.888.456.7890</p>
-
-									<p>Fax: 1.888.654.9876</p>
-
-									<p> Email: Email For An Appointment</p>
-
-									<p>Web: Buy Avada Today!</p>
-							</div>
-							<div style="clear:both;"></div>
-						</div>
-
+					<div class="recent">
+						<h4>RECENT POSTS</h4>
+						<p>&#8594;Hello world!</p>
+						<p>&#8594;There’s always a good reason to visit the dentist</p>
+						<p>&#8594;Brushing for just 2 minutes can reduce plaque by 80%</p>
 					</div>
+					<div class="contact">
+						<h4>CONTACT INFO</h4>
+						<p>12345 West Elm Street
+
+							<p>Phone: 1.888.456.7890</p>
+
+							<p>Fax: 1.888.654.9876</p>
+
+							<p> Email: Email For An Appointment</p>
+
+							<p>Web: Buy Avada Today!</p>
+					</div>
+					<div style="clear:both;"></div>
 				</div>
 
 			</div>
 		</div>
 
-		<script>
-			$(window).scroll(function () {
-				let scroll_position = $(window).scrollTop();
-				$('.smilebg').css({ 'background-position-x': scroll_position + 'px' });
+	</div>
+	<script>
+		$(window).scroll(function () {
+			let scroll_position = $(window).scrollTop();
+			$('.smilebg').css({ 'background-position-x': scroll_position + 'px' });
+		});
+
+
+		// toggle footer
+		/*
+	  let mybtn = document.getElementById("jsbtn");
+	  let showhide = document.getElementById("jscontent");
+	  mybtn.addEventListener("click", function () {
+		  if (showhide.style.display === "none") {
+			  showhide.style.display = "block";
+			  mybtn.innerHTML = "Hide";
+			  
+ 
+		  } else {
+			  showhide.style.display = "none";
+			  mybtn.innerHTML = "Show";
+		  }
+	  });
+	  */
+
+		$(document).ready(function () {
+			$('.btn').click(function () {
+				$('.content').slideToggle("slow");
+				// $('.content').animate({opacity:'0.5'},"slow");
+				// $(".btn").text("Show");
 			});
+		});
+		let mybtn = document.getElementById("jsbtn");
+		let showhide = document.getElementById("jscontent");
+		mybtn.addEventListener("click", function () {
+			if (mybtn.innerHTML == "-") {
+				mybtn.innerHTML = "+";
+			} else {
+				mybtn.innerHTML = "-";
+			}
+		});
 
-
-			// toggle footer
-			/*
-		  let mybtn = document.getElementById("jsbtn");
-		  let showhide = document.getElementById("jscontent");
-		  mybtn.addEventListener("click", function () {
-			  if (showhide.style.display === "none") {
-				  showhide.style.display = "block";
-				  mybtn.innerHTML = "Hide";
-				  
-  
-			  } else {
-				  showhide.style.display = "none";
-				  mybtn.innerHTML = "Show";
-			  }
-		  });
-		  */
-
-			$(document).ready(function () {
-				$('.btn').click(function () {
-					$('.content').slideToggle("slow");
-					// $('.content').animate({opacity:'0.5'},"slow");
-					// $(".btn").text("Show");
-				});
-			});
-			let mybtn = document.getElementById("jsbtn");
-			let showhide = document.getElementById("jscontent");
-			mybtn.addEventListener("click", function () {
-				if (mybtn.innerHTML == "-") {
-					mybtn.innerHTML = "+";
-				} else {
-					mybtn.innerHTML = "-";
-				}
-			});
-
-		</script>
+	</script>
 </body>
 
 </html>
