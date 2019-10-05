@@ -103,6 +103,7 @@
 		}
 
 		.dentistcare {
+			overflow: auto;
 			padding: 130px 0;
 			text-align: center;
 			margin-left: 300px;
@@ -194,13 +195,15 @@
 		}
 
 		.underl {
-			margin: 50px 0;
+			margin: 50px auto;
 			height: 2px;
 			width: 150px;
 			background-color: blue;
 		}
 
+
 		.underd {
+			overflow: auto;
 			height: 1px;
 			width: 120px;
 			margin: 25px auto;
@@ -306,13 +309,7 @@
 		}
 
 		/* Smile milebg smiletext */
-		.smile {
-			margin-left: 300px;
-			/* border: 3px solid red; */
 
-			height: 800px;
-			background-color: white;
-		}
 
 		.smilebg {
 			width: 100%;
@@ -323,12 +320,6 @@
 		}
 
 		/* Smile milebg smiletext */
-		.smile {
-			margin-left: 300px;
-			/* border: 3px solid red; */
-			height: 550px;
-			/* background-color: white; */
-		}
 
 		.smilebg {
 			position: relative;
@@ -355,11 +346,13 @@
 			margin-bottom: 30px;
 			/* margin: 77px auto; */
 		}
+
 		.smilecontent p:not(:first-child) {
 			font-size: 18px;
 			line-height: 24px;
 			padding: 5px 0;
 		}
+
 		.smilecontent {
 			color: white;
 			font-weight: lighter;
@@ -374,372 +367,417 @@
 
 		/* footer toggle */
 		.myDiv {
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-            right: 0;
+			width: 100%;
+			position: fixed;
+			bottom: 0;
+			right: 0;
 
-        }
+		}
 
-        .btn {
-            margin: 10px;
-            width: 50px;
-            height: 50px;
-            background-color: #43515E;
-            color: white;
-            line-height: 50px;
-            text-align: center;
-            border-radius: 50%;
-            float: right;
+		.btn {
+			margin: 10px;
+			width: 50px;
+			height: 50px;
+			background-color: #43515E;
+			color: white;
+			line-height: 50px;
+			text-align: center;
+			border-radius: 50%;
+			float: right;
 
-        }
+		}
 
-        .content {
-            /* margin-top: 20px; */
-            width: 100%;
-            /* height: 300px; */
-            padding: 35px 30px;
-            background-color: #43515E;
-            opacity: 0.9;
+		.content {
+			/* margin-top: 20px; */
+			width: 100%;
+			/* height: 300px; */
+			padding: 35px 30px;
+			background-color: #43515E;
+			opacity: 0.9;
 			display: none;
-		 
-        }
 
-        .address {
-            margin: auto;
-            width: 70%;
-            /* border: 2px solid black; */
-        }
+		}
 
-        .about,
-        .recent,
-        .contact {
-            
-            float: left;
-            width: 27%;
-            margin: 0 30px;
-            /* border: 1px solid red; */
-        }
-        .about h4,
-        .recent h4,
-        .contact h4{
-            margin-bottom: 20px;
-            color: white;
-            font-weight: normal;
+		.address {
+			margin: auto;
+			width: 70%;
+			/* border: 2px solid black; */
+		}
 
-        }
-        .about p{
-            color: white;
-            font-size: 18px;
-            
-            line-height: 30px;
+		.about,
+		.recent,
+		.contact {
 
-        }
-        .recent p{
-            /* padding: 0 20px; */
-            color: #4fc3a3;
-            line-height: 30px;
-            font-size: 18px;
-            padding-bottom: 20px;
-        }
+			float: left;
+			width: 27%;
+			margin: 0 30px;
+			/* border: 1px solid red; */
+		}
 
-       
-        .contact p{
-            font-size: 16px;
-            color: white;
-            padding: 5px 0;
+		.about h4,
+		.recent h4,
+		.contact h4 {
+			margin-bottom: 20px;
+			color: white;
+			font-weight: normal;
 
-        }
+		}
+
+		.about p {
+			color: white;
+			font-size: 18px;
+
+			line-height: 30px;
+
+		}
+
+		.recent p {
+			/* padding: 0 20px; */
+			color: #4fc3a3;
+			line-height: 30px;
+			font-size: 18px;
+			padding-bottom: 20px;
+		}
+
+
+		.contact p {
+			font-size: 16px;
+			color: white;
+			padding: 5px 0;
+
+		}
+
 		/*design by venu and praveen css code*/
-		.treatment{
-border:2px solid red;
-padding:30px;
-margin-left:300px;
-background-color:white;
-}
-.our {
-    border: 2px solid pink;
-    float: left;
-    width: 50%;
-}
-.right {
-   border: 2px solid yellow;
-    float: left;
-    width: 47%;
-    margin-right: 15px;
-}
-.right p::before {
-    Content: "\2713";
-    color: blue;
-    font-style: Arial;
-    font-size: 30px;
-    padding-right: 15px;
-    font-weight: bold;
-}
-.right p {
-    margin: 0;
-    border-bottom: 1px solid green;
-    padding: 6px 0;
-	color:#86939E;
-}
-.right p:last-child{
-border-bottom:none;
-}
+		.treatment {
+			/* border: 2px solid red; */
+			padding: 30px;
+			margin-left: 300px;
+			background-color: white;
+		}
 
-button {
-    padding: 10px 25px;
-    /* width: 200px; */
-    background-color: #6487c2;
-    color: white;
-    border: none;
-    margin: 30px 0;
-    text-transform: uppercase;
-    border-radius: 3px;
-}
-button:hover{
-background-color:green;
-}
-.doctor {
-    border: 2px solid gray;
-    float: left;
-    width: 50%;
-}
-.doctor img{
-width:100%;
-height:700px;
-}
-.our h1{
-font-size:52px;
+		.our {
+			/* border: 2px solid pink; */
+			float: left;
+			width: 50%;
+		}
 
-margin-top:25px;
-color:#56585A;
-}
-.our h4 {
-    font-size: 22px;
-    line-height: 34px;
-	color:#86939E;
-	margin-bottom:40px;
-}
-.undertreat{
-width:100px;
-height:2px;
-background-color:blue;
-margin-top:30px;
-margin-bottom:30px;
-}
-.confidence{
-margin-left:300px;
-border:2px solid pink;
+		.right {
+			/* border: 2px solid yellow; */
+			float: left;
+			width: 47%;
+			margin-right: 15px;
+		}
 
+		.right p::before {
+			Content: "\2713";
+			color: blue;
+			font-style: Arial;
+			font-size: 30px;
+			padding-right: 15px;
+			font-weight: bold;
+		}
 
-}
-.confidenceimg{
-background-image:url("images/testimonial_dental_bg.jpg");
-height:600px;
-background-size:cover;
-position:relative;
-top:0;
-}
-.confidencepara {
-    font-size: 34px;
-    color: #FFFFFF;
-    margin: auto;
-    width: 624px;
-    position: absolute;
-    left: 339px;
-    top: 168px;
-    line-height: 40px;
-}
-.confidencepara h4{
-margin-top:30px;
-font-weight:bold;
-}
-.confidencepara h5{
-font-style:italic;
-}
-.confidencepara img {
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    left: -58px;
-    top: -59px;
-}
+		.right p {
+			margin: 0;
+			border-bottom: 1px solid green;
+			padding: 6px 0;
+			color: #86939E;
+		}
+
+		.right p:last-child {
+			border-bottom: none;
+		}
+
+		button {
+			padding: 10px 25px;
+			/* width: 200px; */
+			background-color: #6487c2;
+			color: white;
+			border: none;
+			margin: 30px 0;
+			text-transform: uppercase;
+			border-radius: 3px;
+		}
+
+		button:hover {
+			background-color: green;
+		}
+
+		.doctor {
+			/* border: 2px solid gray; */
+			float: left;
+			width: 50%;
+		}
+
+		.doctor img {
+			width: 100%;
+			height: 700px;
+		}
+
+		.our h1 {
+			font-size: 52px;
+
+			margin-top: 25px;
+			color: #56585A;
+		}
+
+		.our h4 {
+			font-size: 22px;
+			line-height: 34px;
+			color: #86939E;
+			margin-bottom: 40px;
+		}
+
+		.undertreat {
+			width: 100px;
+			height: 2px;
+			background-color: blue;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		/*
+		.confidence {
+			margin-left: 300px;
+			border: 2px solid pink;
 
 
-.underpart{
-width:100px;
-height:3px;
-background-color:blue;
-margin:auto;
-margin-top:40px;
-margin-bottom:40px;
+		}
 
-}
-.partners {
-    margin-left: 300px;
-    text-align: center;
-    padding: 100px 0;
-    /* margin-top: 60px; */
-    /* margin-bottom: 60px; */
-    background-color: #f7f7f7;
-}
+		.confidenceimg {
+			background-image: url("images/testimonial_dental_bg.jpg");
+			height: 600px;
+			background-size: cover;
+			position: relative;
+			top: 0;
+		}
 
-.partnerpara p {
-    font-size: 22px;
-    width: 539px;
-    margin: auto;
-	margin-top:30px;
-	margin-bottom:30px;
-}
-.partnerpara h1{
-font-weight:normal;
-margin-top:40px;
-}
-.teeth {
-    padding: 40px 0;
-    margin-left: 300px;
-    background-color: #f7f7f7;
-}
-.topteeth img {
-    width: 100%;
-}
-.topteeth div {
-    width: 25%;
-    padding: 0 25px;
-}
-.topteeth{
-display:flex;
-border:2px solid red;
-}
+		.confidencepara {
+			font-size: 34px;
+			color: #FFFFFF;
+			margin: auto;
+			width: 624px;
+			position: absolute;
+			left: 339px;
+			top: 168px;
+			line-height: 40px;
+		}
 
-.smile{
-margin-left:300px;
+		.confidencepara h4 {
+			margin-top: 30px;
+			font-weight: bold;
+		}
 
+		.confidencepara h5 {
+			font-style: italic;
+		}
 
-}
-.bgsmile{
-background-image:url("images/cta_bg.jpg");
-height:400px;
-background-size:cover;
-position:relative;
-top:0;
-}
-.bgsmile img{
-width:100%;
-}
-.bgsmile h1{
-text-align:center;
-font-size:80px;
-color:white;
-padding-top:100px;
-}
-.bgsmile button{
-position:absolute;
-left:450px;
-width:300px;
-font-weight:bold;
-background-color:#4FC3A3;
-}
-.bgsmile button:hover{
-background-color:white;
-color:blue;
-font-weight:bold;
-}
+		.confidencepara img {
+			width: 50px;
+			height: 50px;
+			background-color: white;
+			position: absolute;
+			left: -58px;
+			top: -59px;
+		}
 
-.contact1 {
-    margin-left: 300px;
-    /* border: 2px solid red; */
-    /* margin-top: 50px; */
-    /* margin: 50px 50px 50px 300px; */
-    background-color: white;
-    /* width: 100%; */
-}
-.den {
-    float: left;
-    width: 33.33%;
-    <!--border: 2px solid red;-->
-    position: relative;
-    /* margin-bottom: 50px; */
-    padding: 20px;
-}
-.den img{
-width:346px;
-height:138px;
-}
-.center img
-{
-display:block;
-margin:0 auto;
-}
-.center p {
-    /* text-align: center; */
-    font-size: 17px;
-    color: #86939E;
-    /* margin-left: 25px; */
-    /* margin-bottom: 23px; */
-    font-style: italic;
-    line-height: 27px;
-    margin-top: 20px;
-}
-.den i {
-    margin: 0px 26px 0 0;
-    width: 30px;
-    /* border: 2px solid red; */
-    /* text-align: center; */
-}
-.den .road{
-color:#86939E;
-font-size:16px;
-line-height:32px;
+*/
+		.underpart {
+			width: 100px;
+			height: 3px;
+			background-color: blue;
 
-}
-.google {
-	position:relative;
-    width: 97%;
-    height: 150px;
-    padding: 20px 30px;
-    margin: 5px auto;
-    /* border: 2px solid pink; */
-    border-radius: 5px;
-    background-color: white;
-}
-.findbackgra {
-    background-color: gray;
-    width: 100%;
-    height: 200px;
-    /* border: 2px solid yellow; */
-    /* border-radius: 8px; */
-    overflow: auto;
-}
+			margin: 30px auto;
+
+		}
+
+		.partners {
+			margin-left: 300px;
+			text-align: center;
+			padding: 50px 0;
+			/* margin-top: 60px; */
+			/* margin-bottom: 60px; */
+			background-color: #f7f7f7;
+		}
+
+		.partnerpara p {
+			font-size: 22px;
+			width: 539px;
+			margin: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.partnerpara h1 {
+			font-weight: normal;
+			margin: 20px;
+		}
+
+		.teeth {
+			padding: 40px 0;
+			/* margin-left: 300px; */
+			/* background-color: #f7f7f7; */
+		}
+
+		.topteeth img {
+			width: 100%;
+		}
+
+		.topteeth div {
+			width: 25%;
+			padding: 0 25px;
+		}
+
+		.topteeth {
+			display: flex;
+			/* border: 2px solid red; */
+		}
+		.smile1{
+			margin-left:300px;
+		}
+
+		.smile {
+			margin-left: 300px;
+			border: 1px solid red;
+			height: 500px;
+
+		}
 
 
+		.bgsmile {
+			background-image: url("images/cta_bg.jpg");
+			height: 400px;
+			background-size: cover;
+			position: relative;
+			top: 0;
+		}
+		.bgsmile img {
+			width: 100%;
+		}
 
-.google button {
-    position: absolute;
-    right: 20px;
-    bottom: -10px;
-    background-color: white;
-    color: blue;
-    border: 1px solid green;
-    padding: 8px 23px;
-    border-radius: 7px;
-}
-.foot {
-    border: 2px solid yellow;
-    margin-left: 300px;
-    text-align: center;
-    color: #86939E;
-    margin-bottom: 40px;
-    clear: both;
-    background-color: white;
-    /* height: 200px; */
-    padding: 30px 0;
-}
-.foot span{
-color:#6487C2;
-}
+		.bgsmile h1 {
+			text-align: center;
+			font-size: 80px;
+			color: white;
+			padding-top: 100px;
+		}
 
+		.bgsmile button {
+			position: absolute;
+			left: 450px;
+			width: 300px;
+			font-weight: bold;
+			background-color: #4FC3A3;
+		}
+
+		.bgsmile button:hover {
+			background-color: white;
+			color: blue;
+			font-weight: bold;
+		}
+
+		.contact1 {
+			padding: 50px 0;
+			margin-left: 300px;
+			/* border: 2px solid red; */
+			/* margin-top: 50px; */
+			/* margin: 50px 50px 50px 300px; */
+			background-color: white;
+			/* width: 100%; */
+		}
+
+		.den {
+			float: left;
+			width: 33.33%;
+			< !--border: 2px solid red;
+			-->position: relative;
+			/* margin-bottom: 50px; */
+			padding: 20px;
+		}
+
+		.den img {
+			width: 346px;
+			height: 138px;
+		}
+
+		.center img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.center p {
+			/* text-align: center; */
+			font-size: 17px;
+			color: #86939E;
+			/* margin-left: 25px; */
+			/* margin-bottom: 23px; */
+			font-style: italic;
+			line-height: 27px;
+			margin-top: 20px;
+		}
+
+		.den i {
+			margin: 0px 26px 0 0;
+			width: 30px;
+			/* border: 2px solid red; */
+			/* text-align: center; */
+		}
+
+		.den .road {
+			color: #86939E;
+			font-size: 16px;
+			line-height: 32px;
+
+		}
+
+		.google {
+			position: relative;
+			width: 97%;
+			height: 150px;
+			padding: 20px 30px;
+			margin: 5px auto;
+			/* border: 2px solid pink; */
+			border-radius: 5px;
+			background-color: white;
+		}
+
+		.findbackgra {
+			background-color: gray;
+			width: 100%;
+			height: 200px;
+			/* border: 2px solid yellow; */
+			/* border-radius: 8px; */
+			overflow: auto;
+		}
+
+
+
+		.google button {
+			position: absolute;
+			right: 20px;
+			bottom: -10px;
+			background-color: white;
+			color: blue;
+			border: 1px solid green;
+			padding: 8px 23px;
+			border-radius: 7px;
+		}
+
+		.foot {
+			/* border: 2px solid yellow; */
+			margin-left: 300px;
+			text-align: center;
+			color: #86939E;
+			/* margin-bottom: 40px; */
+			/* clear: both; */
+			background-color: white;
+			/* height: 200px; */
+			padding: 30px 0;
+		}
+
+		.foot span {
+			color: #6487C2;
+		}
 	</style>
 </head>
 
@@ -800,8 +838,7 @@ color:#6487C2;
 				</div>
 				<h1><span style="color:#6487C2;">Avada Dentists</span> Care Passionate about Helping take care of Your
 					Teeth</h1>
-				<div class="underd">
-				</div>
+				<div class="underd"></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
 					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 					aliquip ex ea commodo consequat..</p>
@@ -814,8 +851,7 @@ color:#6487C2;
 					<img src="images/icon_2.png">
 				</div>
 				<h1>The Benfits</h1>
-				<div class="underadd">
-				</div>
+				<div class="underadd"></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
 					et
 					dolore magna aliqua. </p>
@@ -855,7 +891,7 @@ color:#6487C2;
 				<div style="clear: both;"></div>
 			</div>
 		</div>
-		<!--<div class="smile">
+		<div class="smile">
 			<div class="smilebg">
 				<div class="smilecontent">
 					<p> I can smile with complete confidence!
@@ -869,60 +905,63 @@ color:#6487C2;
 
 			</div>
 		</div>
-		-->
-	<!--
+
+		<!--
 	Practice by venu praveeen
 -->
-<div class="treatment">
-				<div class="our">
-					<img src="images/icon_3.png">
-					<h1>Our Treatments</h1>
-					<div class="undertreat"></div>
-					<h4>We also offer treatments that improve the appearance of your smile – giving you the confidence boost you deserve.</h4>
-					<div class="right">
-						<p>Check Ups</p>
-						<p>Cosmetic dentistry</p>
-						<p>Orthodontics</p>
-						<p>Preventative checks</p>
-						<p>Same-day appointments</p>
-						<p>Gum disease treatments</p>
-					</div>
-					<div class="right">
-						<p>Emergines</p>
-						<p>Dental implants</p>
-						<p>Children's density</p>
-						<p>Telephone consultations</p>
-						<p>Private insurance schemes</p>
-						<p>Tooth whitening</p>			
-					</div>
-					<div style="clear:both;"></div>
-					
-					<button>Our Treatments</button>
-				</div>		
-				<div class="doctor">
-					<img src="images/dentist_our_treatments.jpg">
+		<div class="treatment">
+			<div class="our">
+				<img src="images/icon_3.png">
+				<h1>Our Treatments</h1>
+				<div class="undertreat"></div>
+				<h4>We also offer treatments that improve the appearance of your smile – giving you the confidence boost
+					you deserve.</h4>
+				<div class="right">
+					<p>Check Ups</p>
+					<p>Cosmetic dentistry</p>
+					<p>Orthodontics</p>
+					<p>Preventative checks</p>
+					<p>Same-day appointments</p>
+					<p>Gum disease treatments</p>
+				</div>
+				<div class="right">
+					<p>Emergines</p>
+					<p>Dental implants</p>
+					<p>Children's density</p>
+					<p>Telephone consultations</p>
+					<p>Private insurance schemes</p>
+					<p>Tooth whitening</p>
 				</div>
 				<div style="clear:both;"></div>
+
+				<button>Our Treatments</button>
 			</div>
-			<div class="confidence">
-				<div class="confidenceimg">
-					<div class="confidencepara">
-						<img src="images/start-open-quote-512.png">
-						<p>I can smile with complete confidence! I can’t now imagine ever being concerned about appearing in photos. It’s just been a new lease of life. Thank you.</p>
-						<h4>Laura Hughes</h4>
-						<h5>Patient</h5>
-					</div>
+			<div class="doctor">
+				<img src="images/dentist_our_treatments.jpg">
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<!--
+		<div class="confidence">
+			<div class="confidenceimg">
+				<div class="confidencepara">
+					<img src="images/start-open-quote-512.png">
+					<p>I can smile with complete confidence! I can’t now imagine ever being concerned about appearing in
+						photos. It’s just been a new lease of life. Thank you.</p>
+					<h4>Laura Hughes</h4>
+					<h5>Patient</h5>
 				</div>
 			</div>
-			<div class="partners">
-				<div class="partnerpara">
-					<img src="images/icon_4.png">
-					<h1>Our Partners</h1>
-					<div class="underpart">
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit incididunt ut labore et dolore magna aliqua enim.</p>
+		</div>
+		-->
+		<div class="partners">
+			<div class="partnerpara">
+				<img src="images/icon_4.png">
+				<h1>Our Partners</h1>
+				<div class="underpart">
 				</div>
-				
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit incididunt ut labore et dolore magna aliqua
+					enim.</p>
 			</div>
 			<div class="teeth">
 				<div class="topteeth">
@@ -939,136 +978,142 @@ color:#6487C2;
 				</div>
 				<div style="clear:both;"></div>
 			</div>
-			<div class="smile">
-				<div class="bgsmile">
-					<h1>Ready To Smile?</h1>
-					<button>+ BOOK AN OPPOINTMENT</button>
-				</div>
-			</div>
-			<div class="contact1">
-				<div class="den ">
-					<div class="center"><img src="images/dentistlogo.png"><p>Avada Dental gives you a reason to <span style="color:#4FC3A3;">keep smiling</span>  and to feel confident about it!</p></div>
-					
-				</div>
-				<div class="den">
-					<p style="font-size:18px;">Contact Details</p>
-						<div class="road"><i class="fa fa-home icon"></i>12345 North Main Street,<br>New York Ny 555555</div>
-						<div class="road"><i class="fa fa-mobile icon"></i>9301258458</div>
-						<div class="road"><i class="fa fa-envelope icon"></i>@Info Dentist.com</div>
-						<div class="road"><i class="fa fa-link icon"></i>Dentist.com</div>
-				</div>
-				<div class="den">
-					<div>
-					<p style="font-size:18px;">Find Us</p>
-					</div>
-					<div class="findbackgra">
-						<div class="google">
-							<p style="font-weight:bold;">Google</p>
-							<p style="font-weight:bold;">This Page Can't Load Google Maps correctly</p>
-							<p style="font-size:12px; font-weight:bold;">Do you own this Website?</p>
-							
-							<button>ok</button>
-						</div>
-						
-					</div>
-					
-				</div>
-				<div style="clear:both;"></div>
-			</div>
-			
-			
-			<div class="foot">
-				&copy; Copyright 2018-2019 |  by <span>Dentist</span>  |  All Rights Reserved  |  Powered by<span> HostingInIndia</span>
-			<div>
-		<!-- toggle footer -->
-
-		<div class="myDiv">
-	
-			<div class="btn" id="jsbtn">
-            +
-        </div>
-			<div style="clear: both;"></div>
-			<div class="content" id="jscontent">
-            <div class="address">
-                <div class="about">
-                    <h4>ABOUT OUR PRACTICE</h4>
-                    <p>
-                        Phasellus non ante ac dui sagittis volutpat.
-                        Curabitur a quam nisl. Nam est elit, congue et
-                        quam id,laoreet consequat erat. Aenean porta
-                        placerat efficitur.Vestibulum et dictum massa,
-                        ac finibus turpis.
-                    </p>
-                </div>
-                <div class="recent">
-                    <h4>RECENT POSTS</h4>
-                    <p>&#8594;Hello world!</p>
-                    <p>&#8594;There’s always a good reason to visit the dentist</p>
-                    <p>&#8594;Brushing for just 2 minutes can reduce plaque by 80%</p>
-                </div>
-                <div class="contact">
-                    <h4>CONTACT INFO</h4>
-                    <p>12345 West Elm Street
-
-                        <p>Phone: 1.888.456.7890</p>
-
-                        <p>Fax: 1.888.654.9876</p>
-
-                        <p> Email: Email For An Appointment</p>
-
-                        <p>Web: Buy Avada Today!</p>
-                </div>
-                <div style="clear:both;"></div>
-            </div>
-
-        </div>
-    </div>
-
 		</div>
-	</div>
 
-	<script>
-		$(window).scroll(function () {
-			let scroll_position = $(window).scrollTop();
-			$('.smilebg').css({ 'background-position-x': scroll_position + 'px' });
-		});
+		<div class="smile1">
+			<div class="bgsmile">
+				<h1>Ready To Smile?</h1>
+				<button>+ BOOK AN OPPOINTMENT</button>
+			</div>
+		</div>
+		<div class="contact1">
+			<div class="den ">
+				<div class="center"><img src="images/dentistlogo.png">
+					<p>Avada Dental gives you a reason to <span style="color:#4FC3A3;">keep smiling</span> and to feel
+						confident about it!</p>
+				</div>
+
+			</div>
+			<div class="den">
+				<p style="font-size:18px;">Contact Details</p>
+				<div class="road"><i class="fa fa-home icon"></i>12345 North Main Street,<br>New York Ny 555555</div>
+				<div class="road"><i class="fa fa-mobile icon"></i>9301258458</div>
+				<div class="road"><i class="fa fa-envelope icon"></i>@Info Dentist.com</div>
+				<div class="road"><i class="fa fa-link icon"></i>Dentist.com</div>
+			</div>
+			<div class="den">
+				<div>
+					<p style="font-size:18px;">Find Us</p>
+				</div>
+				<div class="findbackgra">
+					<div class="google">
+						<p style="font-weight:bold;">Google</p>
+						<p style="font-weight:bold;">This Page Can't Load Google Maps correctly</p>
+						<p style="font-size:12px; font-weight:bold;">Do you own this Website?</p>
+
+						<button>ok</button>
+					</div>
+
+				</div>
+
+			</div>
+			<div style="clear:both;"></div>
+		</div>
 
 
-		// toggle footer
-		  /*
-        let mybtn = document.getElementById("jsbtn");
-        let showhide = document.getElementById("jscontent");
-        mybtn.addEventListener("click", function () {
-            if (showhide.style.display === "none") {
-                showhide.style.display = "block";
-                mybtn.innerHTML = "Hide";
-                
+		<div class="foot">
+			&copy; Copyright 2018-2019 | by <span>Dentist</span> | All Rights Reserved | Powered by<span>
+				HostingInIndia</span>
+			<div>
+				<!-- toggle footer -->
 
-            } else {
-                showhide.style.display = "none";
-                mybtn.innerHTML = "Show";
-            }
-        });
-        */
+				<div class="myDiv">
 
-        $(document).ready(function () {
-            $('.btn').click(function () {
-                $('.content').slideToggle("slow");
-                // $('.content').animate({opacity:'0.5'},"slow");
-                // $(".btn").text("Show");
-            });
-        });
-        let mybtn = document.getElementById("jsbtn");
-        let showhide = document.getElementById("jscontent");
-        mybtn.addEventListener("click", function () {
-            if (mybtn.innerHTML == "-") {
-                mybtn.innerHTML = "+";
-            } else {
-                mybtn.innerHTML = "-";
-            }
-        });
+					<div class="btn" id="jsbtn">
+						+
+					</div>
+					<div style="clear: both;"></div>
+					<div class="content" id="jscontent">
+						<div class="address">
+							<div class="about">
+								<h4>ABOUT OUR PRACTICE</h4>
+								<p>
+									Phasellus non ante ac dui sagittis volutpat.
+									Curabitur a quam nisl. Nam est elit, congue et
+									quam id,laoreet consequat erat. Aenean porta
+									placerat efficitur.Vestibulum et dictum massa,
+									ac finibus turpis.
+								</p>
+							</div>
+							<div class="recent">
+								<h4>RECENT POSTS</h4>
+								<p>&#8594;Hello world!</p>
+								<p>&#8594;There’s always a good reason to visit the dentist</p>
+								<p>&#8594;Brushing for just 2 minutes can reduce plaque by 80%</p>
+							</div>
+							<div class="contact">
+								<h4>CONTACT INFO</h4>
+								<p>12345 West Elm Street
 
-	</script>
+									<p>Phone: 1.888.456.7890</p>
+
+									<p>Fax: 1.888.654.9876</p>
+
+									<p> Email: Email For An Appointment</p>
+
+									<p>Web: Buy Avada Today!</p>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script>
+			$(window).scroll(function () {
+				let scroll_position = $(window).scrollTop();
+				$('.smilebg').css({ 'background-position-x': scroll_position + 'px' });
+			});
+
+
+			// toggle footer
+			/*
+		  let mybtn = document.getElementById("jsbtn");
+		  let showhide = document.getElementById("jscontent");
+		  mybtn.addEventListener("click", function () {
+			  if (showhide.style.display === "none") {
+				  showhide.style.display = "block";
+				  mybtn.innerHTML = "Hide";
+				  
+  
+			  } else {
+				  showhide.style.display = "none";
+				  mybtn.innerHTML = "Show";
+			  }
+		  });
+		  */
+
+			$(document).ready(function () {
+				$('.btn').click(function () {
+					$('.content').slideToggle("slow");
+					// $('.content').animate({opacity:'0.5'},"slow");
+					// $(".btn").text("Show");
+				});
+			});
+			let mybtn = document.getElementById("jsbtn");
+			let showhide = document.getElementById("jscontent");
+			mybtn.addEventListener("click", function () {
+				if (mybtn.innerHTML == "-") {
+					mybtn.innerHTML = "+";
+				} else {
+					mybtn.innerHTML = "-";
+				}
+			});
+
+		</script>
 </body>
 
 </html>
