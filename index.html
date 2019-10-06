@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta name="viewport" content="width=device-width, intial-scale=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
+	<!-- <link rel="stylesheet" href="css/mobile.css"> -->
 	<link rel="stylesheet" href="css/fontawesome.css">
 	<link rel="stylesheet" href="css/bootstrap3.css">
-	<link rel="stylesheet" href="css/mobile.css">
+
 	<script src="js/bootstap3.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<style>
 		* {
-			box-sizing: border-box;
+
 			margin: 0;
 			padding: 0;
+			box-sizing: border-box;
 		}
 
 		.main-container {
+			width: 100%;
 			/* border: 1px solid black; */
 		}
 
@@ -480,7 +482,7 @@
 
 		.right p {
 			margin: 0;
-			border-bottom: 1px solid green;
+			border-bottom: 1px solid #F7F7F7;
 			padding: 6px 0;
 			color: #86939E;
 		}
@@ -514,7 +516,7 @@
 			width: 100%;
 			height: 700px;
 		}
-
+	
 		.our h1 {
 			font-size: 52px;
 
@@ -595,12 +597,13 @@
 		.partners {
 			margin-left: 300px;
 			text-align: center;
-			padding: 50px 0;
+			padding: 50px;
 			/* margin-top: 60px; */
 			/* margin-bottom: 60px; */
 			background-color: #f7f7f7;
 		}
-
+	
+	
 		.partnerpara p {
 			font-size: 22px;
 			width: 539px;
@@ -781,6 +784,198 @@
 		.foot span {
 			color: #6487C2;
 		}
+
+		/* Responsive */
+
+		@media screen and (min-width:320px) and (max-width:768px) {
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				
+			}
+			body{
+				background-color:yellow;
+			}
+
+			.navside {
+				position: static !important;
+				margin:0;
+				/* display: none; */
+				width:100%;
+				height:auto;
+				background-color: white;
+			}
+			.navimage{
+				margin:auto;
+				width:100%;
+			}
+			.navmenu,
+			.navicon,
+			.navtime{
+				display: none;
+			}
+
+			.banner {
+				margin:0;
+				height:auto;
+				background-position: center;
+			}
+			.bannertext {
+				margin:auto;
+				width:80%;
+			}
+			.bannertext h1 {
+				font-size:42px;
+				line-height: normal;
+			}
+			.underl{
+				margin:30px 0;
+			}
+
+			.bannertext p {
+				margin:0;
+				font-size:28px;
+			}
+
+			.dentistcare {
+				margin:0;
+				padding: 40px 30px;
+			}
+
+			.dentistcare h1 {
+				font-size: 38px;
+			}
+
+			.dentistcare p {}
+
+			.dentistcarechild {
+				margin: auto;
+				width:60%;
+			}
+
+			.benfitschild {
+				margin:auto;
+				width:60%;
+			}
+
+			.benfits {
+				margin: 0;
+				padding: 0;
+			}
+			.benfits h1{
+				font-size: 52px;
+			}
+			.adds{
+				padding: 35px;
+			}
+			.parent {
+				border: 1px solid red;
+				margin: 20px auto;
+				width:100%;
+			}
+
+			.parent .image {}
+
+
+			.smile {
+				margin: 0;
+				height:700px;
+			}
+
+			.smilecontent {
+				width:80%;
+				
+			
+			}
+
+			.smilebg {
+				
+
+			}
+
+			.smilebg::before {
+				top:50px;
+				left:10px;
+			}
+
+			.treatment {
+				margin:0;
+			}
+
+			.our {
+				width:100%;
+			}
+
+			.doctor {
+				width:100%;
+			}
+			.doctor img{
+				height: auto;
+			}
+			.right {
+				width:100%;
+			}
+
+			.partners {
+				margin:0;
+			}
+			.partnerpara{
+				padding: 35px;
+			}
+
+			.partnerpara p {
+				width:100%;
+			}
+
+			.topteeth {
+				padding:0 20px;
+				display: block;
+			}
+
+			.topteeth div {
+				width:100%;
+			}
+
+
+			.smile1 {
+				margin:0;
+			}
+
+			.bgsmile h1 {
+				font-weight: normal;
+			}
+
+			.bgsmile button {
+				position:static !important;
+				margin: 30px auto;
+				display: block;
+				width:70%;
+			}
+
+			.contact1 {
+				margin:0;
+				padding: 30px;
+			}
+
+			.den {
+				width:100%;
+			}
+
+			.den img {
+				width: 100%;
+			}
+
+
+			.foot {
+				margin: 0;
+			}
+
+			.myDiv {
+				display: none;
+			}
+
+		}
 	</style>
 </head>
 
@@ -915,7 +1110,7 @@
 		<!--	
 	Practice by venu praveeen
 	-->
-	
+
 		<div class="treatment">
 			<div class="our">
 				<img src="images/icon_3.png">
@@ -948,7 +1143,7 @@
 			</div>
 			<div style="clear:both;"></div>
 		</div>
-	
+
 		<!--
 		<div class="confidence">
 			<div class="confidenceimg">
@@ -991,14 +1186,14 @@
 				<div style="clear:both;"></div>
 			</div>
 		</div>
-		
+
 		<div class="smile1">
 			<div class="bgsmile">
 				<h1>Ready To Smile?</h1>
 				<button>+ BOOK AN OPPOINTMENT</button>
 			</div>
 		</div>
-	
+
 		<div class="contact1">
 			<div class="den ">
 				<div class="center"><img src="images/dentistlogo.png">
@@ -1032,99 +1227,99 @@
 			</div>
 			<div style="clear:both;"></div>
 		</div>
-		
+
 
 
 		<div class="foot">
 			&copy; Copyright 2018-2019 | by <span>Dentist</span> | All Rights Reserved | Powered by<span>
 				HostingInIndia</span>
-		<div>
-			
-		<div class="myDiv">
+			<div>
 
-			<div class="btn" id="jsbtn">
-				+
-			</div>
-			<div style="clear: both;"></div>
-			<div class="content" id="jscontent">
-				<div class="address">
-					<div class="about">
-						<h4>ABOUT OUR PRACTICE</h4>
-						<p>
-							Phasellus non ante ac dui sagittis volutpat.
-							Curabitur a quam nisl. Nam est elit, congue et
-							quam id,laoreet consequat erat. Aenean porta
-							placerat efficitur.Vestibulum et dictum massa,
-							ac finibus turpis.
-						</p>
+				<div class="myDiv">
+
+					<div class="btn" id="jsbtn">
+						+
 					</div>
-					<div class="recent">
-						<h4>RECENT POSTS</h4>
-						<p>&#8594;Hello world!</p>
-						<p>&#8594;There’s always a good reason to visit the dentist</p>
-						<p>&#8594;Brushing for just 2 minutes can reduce plaque by 80%</p>
+					<div style="clear: both;"></div>
+					<div class="content" id="jscontent">
+						<div class="address">
+							<div class="about">
+								<h4>ABOUT OUR PRACTICE</h4>
+								<p>
+									Phasellus non ante ac dui sagittis volutpat.
+									Curabitur a quam nisl. Nam est elit, congue et
+									quam id,laoreet consequat erat. Aenean porta
+									placerat efficitur.Vestibulum et dictum massa,
+									ac finibus turpis.
+								</p>
+							</div>
+							<div class="recent">
+								<h4>RECENT POSTS</h4>
+								<p>&#8594;Hello world!</p>
+								<p>&#8594;There’s always a good reason to visit the dentist</p>
+								<p>&#8594;Brushing for just 2 minutes can reduce plaque by 80%</p>
+							</div>
+							<div class="contact">
+								<h4>CONTACT INFO</h4>
+								<p>12345 West Elm Street
+
+									<p>Phone: 1.888.456.7890</p>
+
+									<p>Fax: 1.888.654.9876</p>
+
+									<p> Email: Email For An Appointment</p>
+
+									<p>Web: Buy Avada Today!</p>
+							</div>
+							<div style="clear:both;"></div>
+						</div>
+
 					</div>
-					<div class="contact">
-						<h4>CONTACT INFO</h4>
-						<p>12345 West Elm Street
-
-							<p>Phone: 1.888.456.7890</p>
-
-							<p>Fax: 1.888.654.9876</p>
-
-							<p> Email: Email For An Appointment</p>
-
-							<p>Web: Buy Avada Today!</p>
-					</div>
-					<div style="clear:both;"></div>
 				</div>
 
 			</div>
-		</div>
-
-	</div>
-	<script>
-		$(window).scroll(function () {
-			let scroll_position = $(window).scrollTop();
-			$('.smilebg').css({ 'background-position-x': scroll_position + 'px' });
-		});
+			<script>
+				$(window).scroll(function () {
+					let scroll_position = $(window).scrollTop();
+					$('.smilebg').css({ 'background-position-x': scroll_position + 'px' });
+				});
 
 
-		// toggle footer
-		/*
-	  let mybtn = document.getElementById("jsbtn");
-	  let showhide = document.getElementById("jscontent");
-	  mybtn.addEventListener("click", function () {
-		  if (showhide.style.display === "none") {
-			  showhide.style.display = "block";
-			  mybtn.innerHTML = "Hide";
-			  
- 
-		  } else {
-			  showhide.style.display = "none";
-			  mybtn.innerHTML = "Show";
-		  }
-	  });
-	  */
+				// toggle footer
+				/*
+			  let mybtn = document.getElementById("jsbtn");
+			  let showhide = document.getElementById("jscontent");
+			  mybtn.addEventListener("click", function () {
+				  if (showhide.style.display === "none") {
+					  showhide.style.display = "block";
+					  mybtn.innerHTML = "Hide";
+					  
+		 
+				  } else {
+					  showhide.style.display = "none";
+					  mybtn.innerHTML = "Show";
+				  }
+			  });
+			  */
 
-		$(document).ready(function () {
-			$('.btn').click(function () {
-				$('.content').slideToggle("slow");
-				// $('.content').animate({opacity:'0.5'},"slow");
-				// $(".btn").text("Show");
-			});
-		});
-		let mybtn = document.getElementById("jsbtn");
-		let showhide = document.getElementById("jscontent");
-		mybtn.addEventListener("click", function () {
-			if (mybtn.innerHTML == "-") {
-				mybtn.innerHTML = "+";
-			} else {
-				mybtn.innerHTML = "-";
-			}
-		});
+				$(document).ready(function () {
+					$('.btn').click(function () {
+						$('.content').slideToggle("slow");
+						// $('.content').animate({opacity:'0.5'},"slow");
+						// $(".btn").text("Show");
+					});
+				});
+				let mybtn = document.getElementById("jsbtn");
+				let showhide = document.getElementById("jscontent");
+				mybtn.addEventListener("click", function () {
+					if (mybtn.innerHTML == "-") {
+						mybtn.innerHTML = "+";
+					} else {
+						mybtn.innerHTML = "-";
+					}
+				});
 
-	</script>
+			</script>
 </body>
 
 </html>
