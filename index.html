@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
@@ -68,6 +69,18 @@
 			background-color: white;
 			color: blue;
 		}
+		.menuIcon{
+		
+			display: none;			
+			/* position: absolute; */
+		}
+		.menuIcon div {
+			/* display: none; */
+			width: 30px;
+			height: 2px;
+			margin: 6px 0;
+			background-color: skyblue;
+		}
 
 		.navside {
 
@@ -92,6 +105,16 @@
 			text-decoration: none;
 			color: white;
 		}
+		.navmenu a:hover{
+
+			color:#4FC3A3;
+		}
+		a.active{
+			display: none;
+			margin-right: 20px;
+			text-align: right;
+			
+		}
 
 		.navmenu {
 			margin: 30px 0;
@@ -102,6 +125,7 @@
 		}
 
 		.navimage {
+			position: relative;
 			margin-top: 25px;
 		}
 
@@ -516,7 +540,7 @@
 			width: 100%;
 			height: 700px;
 		}
-	
+
 		.our h1 {
 			font-size: 52px;
 
@@ -602,8 +626,8 @@
 			/* margin-bottom: 60px; */
 			background-color: #f7f7f7;
 		}
-	
-	
+
+
 		.partnerpara p {
 			font-size: 22px;
 			width: 539px;
@@ -643,7 +667,7 @@
 
 		.smile {
 			margin-left: 300px;
-			border: 1px solid red;
+			/* border: 1px solid red; */
 			height: 500px;
 
 		}
@@ -792,54 +816,83 @@
 				margin: 0;
 				padding: 0;
 				box-sizing: border-box;
-				
+
 			}
-			body{
-				background-color:yellow;
+
+			body {
+				background-color: yellow;
 			}
+			.menuIcon{
+				position: absolute;
+				top:30px;
+				right:45px;
+		display: block;			
+		/* position: absolute; */
+	}
+	.menuIcon div {
+	
+	}
+	a.active{
+		display: block;
+	}
 
 			.navside {
 				position: static !important;
-				margin:0;
+				margin: 0;
 				/* display: none; */
-				width:100%;
-				height:auto;
+				width: 100%;
+				height: auto;
 				background-color: white;
 			}
-			.navimage{
-				margin:auto;
-				width:100%;
+
+			.navimage {
+				margin: auto;
+				width: 70%;
 			}
-			.navmenu,
+
+			.navmenu{
+				
+				position: absolute;
+				width: 100%;
+				top:-30px;
+				height: 100%;
+				z-index: 1;
+				/* border:1px solid red; */
+				background-color: #43515E;
+				display: none;
+			}
 			.navicon,
-			.navtime{
+			.navtime {
 				display: none;
 			}
 
 			.banner {
-				margin:0;
-				height:auto;
+				margin: 0;
+				height: auto;
 				background-position: center;
 			}
+
 			.bannertext {
-				margin:auto;
-				width:80%;
+				margin: auto;
+				width: 80%;
 			}
+
 			.bannertext h1 {
-				font-size:42px;
+				font-size: 42px;
 				line-height: normal;
 			}
-			.underl{
-				margin:30px 0;
+
+			.underl {
+				margin: 30px 0;
 			}
 
 			.bannertext p {
-				margin:0;
-				font-size:28px;
+				margin: 0;
+				font-size: 28px;
 			}
 
 			.dentistcare {
-				margin:0;
+				margin: 0;
 				padding: 40px 30px;
 			}
 
@@ -851,28 +904,31 @@
 
 			.dentistcarechild {
 				margin: auto;
-				width:60%;
+				width: 60%;
 			}
 
 			.benfitschild {
-				margin:auto;
-				width:60%;
+				margin: auto;
+				width: 60%;
 			}
 
 			.benfits {
 				margin: 0;
 				padding: 0;
 			}
-			.benfits h1{
+
+			.benfits h1 {
 				font-size: 52px;
 			}
-			.adds{
+
+			.adds {
 				padding: 35px;
 			}
+
 			.parent {
 				border: 1px solid red;
 				margin: 20px auto;
-				width:100%;
+				width: 100%;
 			}
 
 			.parent .image {}
@@ -880,66 +936,66 @@
 
 			.smile {
 				margin: 0;
-				height:700px;
+				height: 700px;
 			}
 
 			.smilecontent {
-				width:80%;
-				
-			
-			}
+				width: 80%;
 
-			.smilebg {
-				
 
 			}
+
+			.smilebg {}
 
 			.smilebg::before {
-				top:50px;
-				left:10px;
+				top: 50px;
+				left: 10px;
 			}
 
 			.treatment {
-				margin:0;
+				margin: 0;
 			}
 
 			.our {
-				width:100%;
+				width: 100%;
 			}
 
 			.doctor {
-				width:100%;
+				width: 100%;
 			}
-			.doctor img{
+
+			.doctor img {
 				height: auto;
 			}
+
 			.right {
-				width:100%;
+				width: 100%;
 			}
 
 			.partners {
-				margin:0;
+				margin: 0;
 			}
-			.partnerpara{
+
+			.partnerpara {
 				padding: 35px;
 			}
 
 			.partnerpara p {
-				width:100%;
+				width: 100%;
 			}
 
 			.topteeth {
-				padding:0 20px;
+				padding: 0 20px;
 				display: block;
 			}
 
 			.topteeth div {
-				width:100%;
+				width: 100%;
 			}
 
 
 			.smile1 {
-				margin:0;
+				margin: 0;
 			}
 
 			.bgsmile h1 {
@@ -947,19 +1003,19 @@
 			}
 
 			.bgsmile button {
-				position:static !important;
+				position: static !important;
 				margin: 30px auto;
 				display: block;
-				width:70%;
+				width: 70%;
 			}
 
 			.contact1 {
-				margin:0;
+				margin: 0;
 				padding: 30px;
 			}
 
 			.den {
-				width:100%;
+				width: 100%;
 			}
 
 			.den img {
@@ -984,8 +1040,16 @@
 		<div class="navside">
 			<div class="navimage">
 				<img src="images/dentistlogo.png">
+				
 			</div>
-			<div class="navmenu">
+			<div class="menuIcon" onclick="showMenu()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+
+			<div class="navmenu" id="jsnavMenu">
+				<a href="#" onclick="hideMenu()" class="active">&times</a>
 				<a href="#">Home</a>
 				<a href="#">About</a>
 				<a href="#">Treatment</a>
@@ -1319,6 +1383,16 @@
 					}
 				});
 
+			</script>
+			<script>
+				function showMenu(){
+					let sMenu=document.getElementById("jsnavMenu");
+					sMenu.style.display="block";
+				}
+				function hideMenu(){
+					let sMenu=document.getElementById("jsnavMenu");
+					sMenu.style.display="none";
+				}
 			</script>
 </body>
 
